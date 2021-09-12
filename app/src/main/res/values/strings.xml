@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Music Point</string>
+    <string name="button_search">Buscar artista</string>
+    <string name="hint_artista">Digite o nome do seu artista favorito</string>
+    <string name="button_access">Acessar</string>
+    <string name="username">Digite seu nome para acessar</string>
+    <string name="description">Nosso app te permite buscar informações sobre seu artista favorito</string>
+    <string name="welcome_message">Olá! Seja bem vindo(a) ao Music Point!</string>
+    <string name="contentDescriptionLogo">Music Point Logo</string>
+</resources>

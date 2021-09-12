@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <Button
+      android:id="@+id/btSearch"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="28dp"
+      android:backgroundTint="@color/black"
+      android:paddingLeft="75dp"
+      android:paddingTop="15dp"
+      android:paddingRight="75dp"
+      android:paddingBottom="15dp"
+      android:text="@string/button_search"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <EditText
+      android:id="@+id/artistInput"
+      android:layout_width="351dp"
+      android:layout_height="45dp"
+      android:layout_marginBottom="432dp"
+      android:ems="10"
+      android:hint="@string/hint_artista"
+      android:inputType="textPersonName"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/btSearch"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <ImageView
+      android:id="@+id/imgLogo"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="56dp"
+      android:layout_marginTop="60dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/music_point_symbol" />
+
+  <ImageView
+      android:id="@+id/imgLogo2"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="60dp"
+      android:layout_marginEnd="56dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/music_point_symbol" />
+
+  <ImageView
+      android:id="@+id/imgArtist"
+      android:layout_width="175dp"
+      android:layout_height="175dp"
+      android:layout_marginBottom="20dp"
+      app:layout_constraintBottom_toTopOf="@+id/tvArtistName"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/artistInput"
+      app:layout_constraintVertical_bias="0.884"
+      tools:srcCompat="@tools:sample/avatars" />
+
+  <TextView
+      android:id="@+id/tvArtistStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="124dp"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/btSearch"
+      app:layout_constraintEnd_toEndOf="@+id/imgArtist"
+      app:layout_constraintHorizontal_bias="0.509"
+      app:layout_constraintStart_toStartOf="@+id/imgArtist" />
+
+  <TextView
+      android:id="@+id/tvArtistName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="168dp"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/btSearch"
+      app:layout_constraintEnd_toEndOf="@+id/imgArtist"
+      app:layout_constraintHorizontal_bias="0.509"
+      app:layout_constraintStart_toStartOf="@+id/imgArtist" />
+
+  <TextView
+      android:id="@+id/tvArtistGenre"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="80dp"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/btSearch"
+      app:layout_constraintEnd_toEndOf="@+id/imgArtist"
+      app:layout_constraintHorizontal_bias="0.509"
+      app:layout_constraintStart_toStartOf="@+id/imgArtist" />
+
+  <TextView
+      android:id="@+id/tvArtistCountry"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="36dp"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/btSearch"
+      app:layout_constraintEnd_toEndOf="@+id/imgArtist"
+      app:layout_constraintHorizontal_bias="0.509"
+      app:layout_constraintStart_toStartOf="@+id/imgArtist" />
+
+  <TextView
+      android:id="@+id/tvWelcomeUser"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Olá Daniel,"
+      android:textSize="28sp"
+      app:layout_constraintBottom_toTopOf="@+id/artistInput"
+      app:layout_constraintEnd_toStartOf="@+id/imgLogo2"
+      app:layout_constraintStart_toEndOf="@+id/imgLogo"
+      app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
