@@ -8,10 +8,8 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface ArtistService {
-
         @GET("search.php")
         fun getArtist(@Query("s") name: String) : Call<Artist>
-
 }
 
 class ArtistConnection {

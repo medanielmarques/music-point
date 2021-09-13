@@ -25,14 +25,24 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate((layoutInflater))
         setContentView(binding.root)
 
+        animate()
+
         binding.btAccess.setOnClickListener {
             val username = binding.tvUsername.text.toString()
             sharedPrefs.updateUsername(username)
 
-            Log.i("username", sharedPrefs.getUsername().toString())
-
             val intent = Intent(this@MainActivity, ArtistActivity::class.java)
             startActivity(intent)
+        }
+    }
+
+    private fun animate() {
+        fadeIn(binding.imgLogo)
+    }
+
+    private fun fadeIn(view: View) {
+        view.apply {
+            animate().setDuration(4000).alpha(1f)
         }
     }
 }

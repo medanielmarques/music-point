@@ -8,7 +8,7 @@
         <entry key="app/src/main/res/drawable/music_point_logo_background.xml" value="0.36302083333333335" />
         <entry key="app/src/main/res/drawable/music_point_symbol.xml" value="0.36302083333333335" />
         <entry key="app/src/main/res/layout/activity_artist.xml" value="0.34270833333333334" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.35989583333333336" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_on_boarding.xml" value="0.34270833333333334" />
       </map>
     </option>
